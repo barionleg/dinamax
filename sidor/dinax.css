@@ -1,0 +1,441 @@
+/* ==================== */
+/*  FASTA HTML-ELEMENT  */
+/* ==================== */
+
+body{
+ background-color: #FFB720;
+ background-image: url(../gfx/bg/bg-noise.gif);
+ background-position: top left;
+ background-repeat: repeat;
+ font-size: 12px;
+ font-family: Verdana, Arial;
+ letter-spacing: 0px;
+ padding: 0px;
+ margin: 0px;
+ color: #000000;
+}
+
+form{
+ margin: 0px;
+ padding: 0px;
+}
+
+img{
+ border-style: none;
+}
+
+table{
+ border-style: none;
+ margin: 0px;
+ padding: 0px;
+}
+
+h1{
+ font-family: Arial, Verdana, Garamond, Helvetica, sans-serif;
+ font-size: 22px;
+ font-weight: bold;
+ line-height: 26px;
+ margin-top: 0px;
+ margin-bottom: 40px;
+}
+
+h2{
+ font-family: Arial, Verdana, Garamond, Helvetica, sans-serif;
+ font-size: 18px;
+ font-weight: bold;
+ line-height: 22px;
+ margin-top: 30px;
+ margin-bottom: 30px;
+}
+
+
+
+
+
+/* ============== */
+/*  HTML-KLASSER  */
+/* ============== */
+
+.searchResultHeader{
+ background-color: #F8F6EA;
+ border-bottom: 1px solid #E8E8CA;
+ padding: 4px 9px 4px 9px;
+ font-family: Verdana, Arial;
+ font-size: 12px;
+}
+
+.textBoxDiv{
+ border: 1px solid #D8D8BA;
+ background-color: #F8F6EA;
+ padding: 9px 9px 9px 9px;
+}
+
+.menuBoxFrameOuter{
+ background-color: #CECEB2;
+ padding: 1px 1px 1px 1px;
+ border-right: 1px solid #D8D8BA;
+ border-bottom: 1px solid #D8D8BA;
+}
+
+.menuBoxFrameInner{
+ background-color: #FFFFFF;
+ padding: 4px 4px 4px 4px;
+}
+
+.menuBoxHeaderFrame{
+ background-color: #FFFFFF;
+ padding: 0px 0px 1px 0px;
+ border-bottom: 2px solid #CD1937;
+}
+
+.menuBoxHeader{
+ background-color: #5E844E;
+ padding: 0px 0px 0px 0px;
+ height: 22px;
+ color: #FFFFFF;
+}
+
+.inputBoxSearch{
+ padding: 2px 2px 2px 2px;
+ border: 1px solid #B0B090;
+ background-color: #F6F6F2;
+ font-family: Verdana, Arial;
+ font-size: 12px;
+ color: #000000;
+}
+
+.inputBox{
+ padding: 2px 2px 2px 2px;
+ border: 1px solid #000000;
+ background-color: #f8f8f8;
+ font-family: Verdana, Arial;
+ font-size: 12px;
+ color: #000000;
+}
+
+.inputBoxSmall{
+ padding: 2px 2px 2px 2px;
+ border: 1px solid #000000;
+ background-color: #f8f8f8;
+ font-family: Verdana, Arial;
+ font-size: 10px;
+ color: #000000;
+}
+
+.textTopic{
+ font-family: Verdana, Arial, Garamond;
+ font-size: 20px;
+ font-weight: bold;
+ line-height: 24px;
+}
+
+.textByline{
+ font-family: Verdana, Arial;
+ font-size: 11px;
+ line-height: 14px;
+ color: #888888;
+}
+
+.textSmall{
+ font-family: Verdana, Arial;
+ font-size: 10px;
+}
+
+.textBlue{
+ color: #5383E4;
+}
+
+.textOrange{
+ color: #F09000;
+}
+
+.textRed{
+ color: #FF0000;
+}
+
+.textGreen{
+ color: #44aa00;
+}
+
+.textDim{
+ color: #C8C8AA;
+}
+
+.textLocation{
+ font-family: Verdana, Arial;
+ font-size: 10px;
+ font-weight: bold;
+ color: #000000;
+}
+
+.textFooter{
+ color: #ffffff;
+ font-weight: bold;
+ font-family: Verdana, Arial;
+ font-size: 13px;
+ line-height: 20px;
+}
+
+.borderTop{
+ border-top: 1px solid #000000;
+}
+
+.borderLeft{
+ border-left: 1px solid #000000;
+}
+
+.borderRight{
+ border-right: 1px solid #000000;
+}
+
+.borderBottom{
+ border-bottom: 1px solid #000000;
+}
+
+.borderFull{
+ border: 1px solid #000000;
+}
+
+.imgBorder{
+ border: 1px solid #888888;
+}
+
+.formQuestion{
+ font-size: 10px;
+ line-height: 18px;
+}
+
+
+
+
+
+/* ============== */
+/*  LÄNK-KLASSER  */
+/* ============== */
+
+a.noUnderLink:link, a.noUnderLink:visited{
+ color: #0000cc;
+ text-decoration: none;
+}
+a.noUnderLink:hover, a.noUnderLink:active{
+ background-color: #d0e0ff;
+ color: #0000cc;
+ text-decoration: underline;
+}
+
+a.imgLink:link, a.imgLink:visited{
+ background-color: transparent;
+ text-decoration: none;
+}
+a.imgLink:hover, a.imgLink:active{
+ background-color: transparent;
+ text-decoration: none;
+}
+
+a.redLink:link, a.redLink:visited{
+ color: #ff0000;
+ text-decoration: underline;
+}
+a.redLink:hover, a.redLink:active{
+ background-color: #ffdddd;
+ color: #ff0000;
+ text-decoration: underline;
+}
+
+a:link, a:visited{
+ color: #0000cc;
+ text-decoration: underline;
+}
+a:hover, a:active{
+ background-color: #d0e0ff;
+ color: #0000cc;
+ text-decoration: underline;
+}
+
+
+
+
+
+/* ====================== */
+/*  LAYOUT (DIV) ELEMENT  */
+/* ====================== */
+
+#containerDiv{
+ border-right: 2px solid #E5A114;
+ border-bottom: 3px solid #E5A114;
+ background-color: #A87B1C;
+ padding: 1px 1px 1px 1px;
+ margin-top: 10px;
+ margin-left: auto;
+ margin-right: auto;
+ width: 780px;
+}
+
+ #innerFrameDiv{
+  background-color: #FFFFFF;
+  padding: 5px 5px 5px 5px;
+ }
+
+  #topBannerDiv{
+   background-image: url(../gfx/dinaxlogobg.jpg);
+   background-position: top left;
+   background-repeat: no-repeat;
+   border-bottom: 2px solid #ffffff;
+   height: 150px;
+  }
+
+  #menuFrameDiv{
+   border-bottom: 5px solid #ffffff;
+  }
+
+   #menuBlueDiv{
+    background-color: #567DE4;
+    border-top: 3px solid #9EB6FF;
+    border-bottom: 1px solid #365Dc4;
+    padding: 0px;
+    line-height: 22px;
+    height: 22px;
+    color: #ffffff;
+   }
+
+   #menuBlueDiv ul{
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: transparent;
+   }
+
+   #menuBlueDiv li{
+    display: inline;
+    margin: 0;
+    padding: 0;
+   }
+
+   #menuBlueDiv a{
+    display: block;
+    float: left;
+    width: auto;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 22px;
+    padding: 0px 10px 0px 10px;
+    background-color: transparent;
+    color: #ffffff;
+    text-decoration: none;
+   }
+   #menuBlueDiv a:hover, #menuBlueDiv a:active, #menuBlueDiv a:focus{
+    background-color: #9EB6FF;
+    color: #ffffff;
+    text-decoration: none;
+   }
+
+
+
+   #servicesBlueDiv{
+    background-color: #7Ea0FF;
+    border-bottom: 2px solid #567DE4;
+    padding: 0px;
+    line-height: 18px;
+    height: 18px;
+    color: #ffffff;
+   }
+
+   #servicesBlueDiv ul{
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: transparent;
+   }
+
+   #servicesBlueDiv li{
+    display: inline;
+    margin: 0;
+    padding: 0;
+   }
+
+   #servicesBlueDiv a{
+    display: block;
+    float: left;
+    width: auto;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    line-height: 18px;
+    padding: 0px 10px 0px 10px;
+    background-color: transparent;
+    color: #ffffff;
+    text-decoration: none;
+   }
+   #servicesBlueDiv a:hover, #servicesBlueDiv a:active, #servicesBlueDiv a:focus{
+    background-color: #567DE4;
+    color: #ffffff;
+    text-decoration: none;
+   }
+
+
+
+
+  #pageFrameDiv{
+   background-color: #F6F6F6;
+   padding: 0px 0px 0px 0px;
+  }
+
+   #pagePaddingDiv{
+    background-color: #ffffff;
+    padding: 9px 9px 9px 9px;
+    font-family: Verdana, Arial, Garamond;
+    font-size: 13px;
+    line-height: 18px;
+   }
+
+    #layoutTableColumnLeft{
+     padding: 0px;
+     width: 20%;
+    }
+
+    #layoutTableColumnMiddle{
+     padding: 0px 4px 0px 4px;
+     width: 60%;
+    }
+
+    #layoutTableColumnRight{
+     padding: 0px;
+     width: 20%;
+    }
+
+  #footerFrameDiv{
+   border-top: 5px solid #ffffff;
+  }
+
+   #footerBlueDiv{
+    background-color: #567DE4;
+    border-top: 3px solid #9EB6FF;
+    border-bottom: 3px solid #9EB6FF;
+    padding: 2px 5px 2px 5px;
+    height: 22px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    line-height: 22px;
+   }
+
+   #footerBlueDiv a{
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 22px;
+    padding: 0px 5px 0px 5px;
+    background-color: transparent;
+    color: #ffffff;
+    text-decoration: none;
+   }
+   #footerBlueDiv a:hover, #footerBlueDiv a:active, #footerBlueDiv a:focus{
+    background-color: #9EB6FF;
+    color: #ffffff;
+    text-decoration: none;
+   }
